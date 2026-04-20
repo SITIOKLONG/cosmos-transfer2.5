@@ -1,3 +1,19 @@
+## RoboMaster
+
+spec: 兩張A5000
+config json文件在myconfig.json
+
+run example:
+```bash
+export COSMOS_EXPERIMENTAL_CHECKPOINTS=1
+export CUDA_VISIBLE_DEVICES=0,2
+torchrun --nproc_per_node=2 --master_port=12341 examples/inference.py \
+    -i myconfig.json \
+    -o outputs/seg_guided_generation \
+    --offload-guardrail-models --compile-tokenizer NONE --resolution 480
+```
+
+# Nvidia Cosmos
 <p align="center">
     <img src="https://github.com/user-attachments/assets/28f2d612-bbd6-44a3-8795-833d05e9f05f" width="274" alt="NVIDIA Cosmos"/>
 </p>

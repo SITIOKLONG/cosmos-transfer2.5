@@ -1,0 +1,23 @@
+{
+  "name": "robomaster",
+
+  "prompt": "robots in a smokey dark warehouse, cyberpunk style, red and blue striped light bars, industrial-grade concrete obstacles, and high-definition, realistic graphics for a cinematic feel.",
+
+  "video_path": "~/omni.replicator_out/_out_sdrec/clip_0000/rgb.mp4",
+
+  "guidance": 5,
+
+  "resolution": "480",
+  
+  "max_frames": 100, 
+
+  "edge": {
+    "control_weight": 1.0,
+    "preset-edge-threshold": "very_low"
+  },
+
+  "seg": {
+    "control_path": "~/omni.replicator_out/_out_sdrec/clip_0000/segmentation.mp4",
+    "control_weight": 1.0
+  }
+}
